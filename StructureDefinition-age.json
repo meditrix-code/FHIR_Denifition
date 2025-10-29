@@ -1,0 +1,29 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://yourname.github.io/fhir-extensions/StructureDefinition-patient-age",
+  "name": "PatientAgeExtension",
+  "title": "Patient Age Extension",
+  "status": "active",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient age",
+        "definition": "Represents the patient's age as an Age data type."
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          { "code": "Age" }
+        ]
+      }
+    ]
+  }
+}
