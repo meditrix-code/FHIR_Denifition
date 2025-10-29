@@ -1,9 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://raw.githubusercontent.com/meditrix-code/FHIR_Denifition/main/StructureDefinition-age.json",
+  "id": "patient-age",
+  "url": "https://meditrix-code.github.io/FHIR_Definition/StructureDefinition-patient-age",
   "name": "PatientAgeExtension",
   "title": "Patient Age Extension",
   "status": "active",
+  "date": "2025-10-29",
+  "publisher": "Meditrix",
+  "description": "An extension to represent the patient's age using the Age data type.",
+  "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "type": "Extension",
@@ -15,13 +20,21 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Patient age",
-        "definition": "Represents the patient's age as an Age data type."
+        "definition": "Represents the patient's age as an Age data type.",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "short": "The patient's age in years.",
+        "definition": "Age value of the patient expressed as a FHIR Age data type.",
+        "min": 1,
+        "max": "1",
         "type": [
-          { "code": "Age" }
+          {
+            "code": "Age"
+          }
         ]
       }
     ]
