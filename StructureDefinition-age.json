@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://yourname.github.io/fhir-extensions/StructureDefinition-patient-age",
+  "url": "https://github.com/meditrix-code/FHIR_Denifition/blob/main/StructureDefinition-age.json",
   "name": "PatientAgeExtension",
   "title": "Patient Age Extension",
   "status": "active",
