@@ -2,7 +2,7 @@
   "resourceType": "Patient",
   "extension": [
     {
-      "url": "http://example.org/fhir/StructureDefinition/my-ext",
+      "url": "https://raw.githubusercontent.com/meditrix-code/FHIR_Denifition/main/StructureDefinition-age.jsont",
       "valueString": "age"
     }
   ]
